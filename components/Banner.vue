@@ -9,11 +9,11 @@
       </a>
     </div>
 
-    <div class="hero-banner__image" ref="banner" @scroll="hideDragOption">
+    <div ref="banner" class="hero-banner__image" @scroll="hideDragOption">
       <picture>
         <source media="(min-width:840px)" srcset="~/assets/images/banner-d.jpeg, ~/assets/images/banner-d-2x.jpg 2x, ~/assets/images/banner-d-3x.jpg 3x">
         <source srcset="~/assets/images/banner-m.jpeg, ~/assets/images/banner-m-2x.jpeg 2x, ~/assets/images/banner-m-3x.jpg 3x">
-        <img ref="image" src="~/assets/images/banner-m.jpeg" :style="{ left: bannerOffSet }">
+        <img ref="image" src="~/assets/images/banner-m.jpeg">
       </picture>
 
       <Label v-for="label in labels" :key="label.id"
@@ -89,7 +89,12 @@ export default {
         }
       ]
     }
-  }, // 'title', 'subtitle', 'link', 'linkTitle', 'offset', 'isMobile'
+  },
+  computed: {
+    isMobile() {
+      return (this.windowWidth <= 840);
+    }
+  },
   mounted() {
     this.windowWidth = window.innerWidth;
     this.imageWidth = this.$refs.image.naturalWidth;
@@ -110,12 +115,6 @@ export default {
     getImageOffset() {
       return this.imageWidth - this.windowWidth;
     }
-  },
-  computed: {
-    isMobile() {
-      return (this.windowWidth <= 840);
-    }
   }
-
 }
 </script>

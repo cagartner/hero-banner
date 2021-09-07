@@ -23,7 +23,44 @@ import TagIcon from "./icons/TagIcon";
 export default {
   name: "Label",
   components: {TagIcon, ArrowRight},
-  props: ['title', 'subtitle', 'link', 'linkTitle', 'offset', 'isMobile', 'openSide'],
+  props: {
+    title: {
+      type: String,
+      default: null
+    },
+    subtitle: {
+      type: String,
+      default: null
+    },
+    link: {
+      type: String,
+      default: null
+    },
+    linkTitle: {
+      type: String,
+      default: null
+    },
+    openSide: {
+      type: String,
+      default: null
+    },
+    offset: {
+      type: Object,
+      default() {
+        return {
+          m: {
+            top: 355,
+            left: 500,
+          },
+          d: {
+            top: 536,
+            left: 900,
+          }
+        }
+      }
+    },
+    isMobile: Boolean
+  },
   data() {
     return {
       showContent: false
