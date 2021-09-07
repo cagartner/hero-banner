@@ -3,7 +3,7 @@
     <div class="hero-banner__content">
       <h1>the refresh sale</h1>
       <p>15% off sitewide to recharge your living space. Ends Friday, 2/19</p>
-      <a href="#" class="button button-primary button-hero" tabindex="1">
+      <a href="https://www.interiordefine.com/" target="_blank" class="button button-primary button-hero" tabindex="1">
         Start customizing
         <ArrowRight />
       </a>
