@@ -110,6 +110,7 @@ export default {
 
     hideDragOption() {
       this.showDragOption = false;
+      this.$nuxt.$emit('hide-all-tags');
     },
 
     getImageOffset() {

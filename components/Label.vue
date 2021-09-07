@@ -66,6 +66,11 @@ export default {
       showContent: false
     }
   },
+  created() {
+    this.$nuxt.$on('hide-all-tags', () => {
+      this.showContent = false;
+    });
+  },
   methods: {
     getOffset(position) {
       if (this.isMobile) {
