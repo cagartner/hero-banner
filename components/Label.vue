@@ -6,11 +6,11 @@
     </button>
     <transition name="fade">
       <div v-if="showContent" class="label__content" :class="openSide">
-        <a class="button button-primary">Shop Now</a>
+        <a class="button button-primary" target="_blank" :href="link" title="Shop Now">Shop Now</a>
         <h3>{{ title }}</h3>
         <p>{{ subtitle }}</p>
         <hr>
-        <a href="link">{{ linkTitle }} <ArrowRight /></a>
+        <a :href="shopAllLink" target="_blank" :title="linkTitle">{{ linkTitle }} <ArrowRight /></a>
       </div>
     </transition>
   </div>
@@ -33,6 +33,10 @@ export default {
       default: null
     },
     link: {
+      type: String,
+      default: null
+    },
+    shopAllLink: {
       type: String,
       default: null
     },

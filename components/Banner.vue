@@ -23,6 +23,7 @@
              :link-title="label.linkTitle"
              :offset="label.offset"
              :open-side="label.openSide"
+             :shop-all-link="label.shopAllLink"
              :is-mobile="isMobile" />
 
       <transition name="fade">
@@ -55,8 +56,9 @@ export default {
           id: 1,
           title: 'Brooks Coffee Table',
           subtitle: 'White wash oak',
-          link: '#',
+          link: 'https://www.interiordefine.com/brooks-coffee-table/?source=1477',
           linkTitle: 'Shop all tables',
+          shopAllLink: 'https://www.interiordefine.com/shop/accent-tables',
           openSide: 'right',
           offset: {
             m: {
@@ -73,8 +75,9 @@ export default {
           id: 2,
           title: 'Sloan Sectional',
           subtitle: 'Vintage Plush Pewter',
-          link: '#',
+          link: 'https://www.interiordefine.com/catalogsearch/result?q=Vintage+Plush+Pewter',
           linkTitle: 'Shop all sectionals',
+          shopAllLink: 'https://www.interiordefine.com/shop/custom-sectional-sofas',
           openSide: 'left',
           offset: {
             m: {
