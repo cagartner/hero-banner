@@ -1,0 +1,48 @@
+// Colors
+$color-primary: #DC6666;
+$color-primary-hover: #C75D5D;
+$color-secondary: #676564;
+$color-text: $color-secondary;
+$color-gray: #151515;
+$color-gray-5: #D8D8D8;
+$color-white: #fff;
+$color-black: #000;
+
+// Font
+$base-font-size: 16px !default;
+$font-family: 'Open Sans', sans-serif !default;
+
+
+// Set to true if you want to add support for IE6 and IE7
+// Notice: setting to true might render some elements
+// slightly differently than when set to false
+$legacy_support_for_ie: false !default; // Used also in Compass
+
+// Set the default font family here so you don't have to override it later
+$normalized_font_family: $font-family !default;
+
+$normalize_headings: true !default;
+
+$h1_font_size: 2em !default;
+$h2_font_size: 1.5em !default;
+$h3_font_size: 1.17em !default;
+$h4_font_size: 1em !default;
+$h5_font_size: 0.83em !default;
+$h6_font_size: 0.75em !default;
+
+$h1_margin: 0.67em 0 !default;
+$h2_margin: 0.83em 0 !default;
+$h3_margin: 1em 0 !default;
+$h4_margin: 1.33em 0 !default;
+$h5_margin: 1.67em 0 !default;
+$h6_margin: 2.33em 0 !default;
+
+$background: $color-white !default;
+$color: $color-text !default;
+
+// Responsive
+$breakpoints: (
+  'small':  ( max-width:  768px ),
+  'medium': ( min-width:  769px ),
+  'large':  ( min-width: 1440px )
+) !default;

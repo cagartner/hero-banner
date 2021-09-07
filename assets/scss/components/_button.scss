@@ -1,0 +1,61 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 300ms;
+
+  &-primary {
+    background: $color-primary;
+    color: $color_white;
+    padding: rem(9) rem(15) rem(10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(5);
+    font-size: rem(13);
+    line-height: rem(16);
+    height: rem(35);
+
+    &:focus,
+    &:hover {
+      background: darken($color-primary, 10%);
+      color: $color_white;
+    }
+  }
+
+  &-hero {
+    width: rem(246);
+    margin: 0 auto;
+    padding: rem(19) 0;
+    border-radius: rem(33);
+    font-size: rem(17);
+    height: rem(60);
+
+    @include bp('medium') {
+      margin: 5px 0 0;
+    }
+  }
+
+  &-drag {
+    width: rem(215px);
+    color: $color_white;
+    background: rgba($color-black, .5);
+    border-radius: rem(5);
+    padding: rem(9.5);
+    border: none;
+
+    svg {
+      width: rem(20);
+      height: rem(14);
+
+      &:first-of-type {
+        margin-right: rem(15);
+      }
+
+      &:last-of-type {
+        margin-left: rem(15);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+html, body {
+  font-size: $base-font-size;
+}
+
+a {
+  color: $color_text;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($color_text, 10%);
+  }
+}
