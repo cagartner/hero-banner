@@ -1,7 +1,7 @@
 # Interior Define - Banner
 
 ## Demo
-
+https://github.com/cagartner/hero-banner
 
 ## Build Setup
 
